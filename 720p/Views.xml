@@ -38,17 +38,9 @@
 					<width>590</width>
 					<height>127</height>
 					<bordersize>12</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
-				</control>
-				<control type="image">
-					<description>Default Cover</description>
-					<width>590</width>
-					<height>127</height>
-					<bordersize>20</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>IsEmpty(ListItem.Thumb)</visible>
 				</control>
 				<control type="image">
 					<description>Dim</description>
@@ -85,17 +77,9 @@
 					<width>590</width>
 					<height>127</height>
 					<bordersize>12</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>stretch</aspectratio>
 					<visible>!IsEmpty(ListItem.Thumb)</visible>
-				</control>
-				<control type="image">
-					<description>Default Cover</description>
-					<width>590</width>
-					<height>127</height>
-					<bordersize>20</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>IsEmpty(ListItem.Thumb)</visible>
 				</control>
 			</focusedlayout>			
 		</control>
@@ -3789,7 +3773,7 @@
 					<width>590</width>
 					<height>127</height>	
 					<bordersize>12</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>stretch</aspectratio>
 				</control>
 				<control type="image">
@@ -3797,18 +3781,8 @@
 					<width>590</width>
 					<height>127</height>	
 					<bordersize>20</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<visible>IsEmpty(ListItem.Thumb)</visible>
-				</control>
-				<control type="image">
-					<description>Dim</description>
-					<width>590</width>
-					<height>127</height>	
-					<bordersize>12</bordersize>
-					<texture>background-dim.png</texture>
-					<aspectratio>stretch</aspectratio>
-					<visible>!IsEmpty(ListItem.Thumb)</visible>
-					<animation effect="fade" end="50" condition="true">Conditional</animation>
 				</control>
 			</itemlayout>															
 			<focusedlayout height="137" width="600">	
@@ -3844,16 +3818,8 @@
 					<width>590</width>
 					<height>127</height>	
 					<bordersize>12</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>stretch</aspectratio>
-				</control>
-				<control type="image">
-					<description>Default Cover</description>
-					<width>590</width>
-					<height>127</height>	
-					<bordersize>20</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<visible>IsEmpty(ListItem.Thumb)</visible>
 				</control>
 			</focusedlayout>			
 		</control>
@@ -4243,19 +4209,8 @@
 					<height>80</height>
 					<bordertexture border="7">item-shadow-border.png</bordertexture>
 					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image">
-					<description>Default Cover</description>
-					<posx>5</posx>
-					<posy>5</posy>
-					<width>140</width>
-					<height>80</height>
-					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>IsEmpty(ListItem.Thumb)</visible>
 				</control>								
 				<control type="label">
 					<description>Title</description>
@@ -4310,20 +4265,9 @@
 					<height>80</height>
 					<bordertexture border="7">item-shadow-border.png</bordertexture>
 					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<texture background="true">$INFO[ListItem.Banner]</texture>
 					<aspectratio>keep</aspectratio>
-				</control>
-				<control type="image">
-					<description>Default Cover</description>
-					<posx>5</posx>
-					<posy>5</posy>
-					<width>140</width>
-					<height>80</height>
-					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Icon]</texture>
-					<aspectratio>keep</aspectratio>
-					<visible>IsEmpty(ListItem.Thumb)</visible>
-				</control>				
+				</control>			
 				<control type="label">
 					<description>Title</description>
 					<posx>150</posx>

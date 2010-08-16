@@ -145,7 +145,6 @@
 				<description>Files</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[1214][/UPPERCASE]</label>
-				<visible>!Substring(Container.FolderPath,plugin://video/,Left)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -153,7 +152,7 @@
 				<description>Video Plugins</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,plugin://video/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 		</control>
@@ -182,7 +181,7 @@
 				<description>Library</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/,Right) | Substring(Container.FolderPath,videodb://2/,Right) | Substring(Container.FolderPath,videodb://3/,Right) | IsEmpty(Container.FolderPath)</visible>
+				<visible>IsEmpty(Container.FolderPath)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 	
@@ -190,7 +189,7 @@
 				<description>Genres</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[135][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/1/,Left) | Substring(Container.FolderPath,videodb://2/1/,Left) | Substring(Container.FolderPath,videodb://3/1/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -198,7 +197,7 @@
 				<description>Title</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[369][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/2/,Left) | Substring(Container.FolderPath,videodb://2/2/,Left) | Substring(Container.FolderPath,videodb://3/2/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -206,7 +205,7 @@
 				<description>Year</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[345][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/3/,Left) | Substring(Container.FolderPath,videodb://2/3/,Left) | Substring(Container.FolderPath,videodb://3/3/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -214,7 +213,7 @@
 				<description>Actors</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[344][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/4/,Left) | Substring(Container.FolderPath,videodb://2/4/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -222,7 +221,6 @@
 				<description>Artists</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[133][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://3/4/,Left)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -230,7 +228,7 @@
 				<description>Albums</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[132][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://3/5/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -238,7 +236,7 @@
 				<description>Directors</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20348][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/5/,Left) | Substring(Container.FolderPath,videodb://3/6/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -246,7 +244,7 @@
 				<description>Studios</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20388][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/6/,Left) | Substring(Container.FolderPath,videodb://2/5/,Left) | Substring(Container.FolderPath,videodb://3/7/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -254,7 +252,7 @@
 				<description>Video Playlists</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[136][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,special://videoplaylists/,Left) | Substring(Container.FolderPath,special://profile/playlists/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -262,7 +260,7 @@
 				<description>Video Plugins</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,plugin://video/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -270,7 +268,7 @@
 				<description>Recently Added</description>
 				<include>BreadCrumbBigBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31303][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://4/,Left) | Substring(Container.FolderPath,videodb://5/,Left) | Substring(Container.FolderPath,videodb://6/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 		</control>
@@ -283,29 +281,27 @@
 				<description>Videos</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
-				<visible>!Substring(Container.FolderPath,videodb://1/,Left) + !Substring(Container.FolderPath,videodb://4/,Left)
-				+ !Substring(Container.FolderPath,videodb://2/,Left) + !Substring(Container.FolderPath,videodb://5/,Left)</visible>
 			</control>
 			
 			<control type="button">
 				<description>Movies</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20342][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://1/,Left) | Substring(Container.FolderPath,videodb://4/,Left)</visible>
+				
 			</control>
 			
 			<control type="button">
 				<description>TV Shows</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20343][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://2/,Left) | Substring(Container.FolderPath,videodb://5/,Left)</visible>
+				
 			</control>
 			
 			<control type="button">
 				<description>Music Videos</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20389][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://3/,Left) | Substring(Container.FolderPath,videodb://6/,Left)</visible>
+				
 			</control>
 		</control>
 			
@@ -382,7 +378,7 @@
 				<description>Genres</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[135][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://1/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -390,7 +386,7 @@
 				<description>Artists</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[133][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://2/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -398,7 +394,7 @@
 				<description>Albums</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[132][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://3/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -406,7 +402,7 @@
 				<description>Singles</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[1050][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://10/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -414,7 +410,7 @@
 				<description>Songs</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[134][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://4/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -422,7 +418,7 @@
 				<description>Years</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[652][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://9/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -430,7 +426,7 @@
 				<description>Top 100</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[271][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://5/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -438,7 +434,7 @@
 				<description>Compilations</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[521][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://8/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -446,7 +442,7 @@
 				<description>Music Playlists</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[136][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,special://musicplaylists/,Left) | Substring(Container.FolderPath,special://profile/playlists/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 					
@@ -454,7 +450,7 @@
 				<description>Music Videos</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,videodb://3/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -462,7 +458,6 @@
 				<description>Recently Added</description>
 				<include>BreadCrumbBigBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31303][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,musicdb://6/,Left) | Substring(Container.FolderPath,musicdb://7/,Left)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 		</control>
@@ -568,7 +563,6 @@
 				<description>Files</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[1214][/UPPERCASE]</label>
-				<visible>!Substring(Container.FolderPath,plugin://programs/,Left)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 			
@@ -576,7 +570,7 @@
 				<description>Program Plugins</description>
 				<include>BreadCrumbBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
-				<visible>Substring(Container.FolderPath,plugin://programs/,Left)</visible>
+				
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 		</control>

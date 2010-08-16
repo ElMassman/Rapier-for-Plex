@@ -203,8 +203,7 @@
 	<include name="BackgroundMovies">
 		<control type="group">
 			<description>Movies Custom Background</description>
-			<visible>[Substring(Container.FolderPath,videodb://1/,Left) | Substring(Container.FolderPath,videodb://4/,Left)] 
-			+ ![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
+			<visible>![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
 			
 			<control type="multiimage">
 				<description>Custom Background</description>
@@ -243,8 +242,7 @@
 	<include name="BackgroundTVShows">
 		<control type="group">
 			<description>TV Shows Custom Background</description>
-			<visible>[Substring(Container.FolderPath,videodb://2/,Left) | Substring(Container.FolderPath,videodb://5/,Left)] 
-			+ ![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
+			<visible>![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
 			
 			<control type="multiimage">
 				<description>Custom Background</description>
@@ -361,10 +359,7 @@
 	<include name="BackgroundNoContent">
 		<control type="group">
 			<description>Default Background</description>
-			<visible>[IsEmpty(Container.FolderPath) | Substring(Container.FolderPath,videodb://3/,Left) | Substring(Container.FolderPath,videodb://6/,Left) 
-			| Substring(Container.FolderPath,plugin://video/,Left) | Substring(Container.FolderPath,special://videoplaylists/,Left)
-			| Substring(Container.FolderPath,special://musicplaylists/,Left) | Substring(Container.FolderPath,special://profile/playlists/,Left)] 
-			+ ![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
+			<visible>IsEmpty(Container.FolderPath) + ![Player.HasAudio + !Skin.HasSetting(DisableMusicPlayingBG)] + ![Player.HasVideo + !Skin.HasSetting(DisableVideoPlayingBG)]</visible>
 			
 			<control type="image">
 				<description>Default Background</description>

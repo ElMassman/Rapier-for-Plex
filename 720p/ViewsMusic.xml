@@ -413,7 +413,7 @@
 			<control type="group">
 				<posy>344</posy>
 				<posx>20</posx>
-				<visible>!Substring(ListItem.Label,..) + !Container.OnNext + !Container.OnPrevious</visible>
+				<visible>!Container.OnNext + !Container.OnPrevious</visible>
 				<include>ControlsOpenCloseAnim</include>
 						
 				<control type="grouplist">

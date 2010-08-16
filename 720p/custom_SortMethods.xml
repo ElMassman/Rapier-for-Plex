@@ -174,7 +174,7 @@
 				<label>$LOCALIZE[559]</label>
 				<onclick>Container.SetSortMethod(19)</onclick>
 				<onclick>Dialog.Close(3003)</onclick>
-				<visible>Substring(Container.FolderPath,special://profile/playlists/,Left)</visible>
+				
 			</control>
 			<control type="image">
 				<include>MenuBarItemBigBottomBorder</include>

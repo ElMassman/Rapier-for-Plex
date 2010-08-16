@@ -53,7 +53,7 @@
 					<description>TV Shows Cover Image</description>
 					<width>980</width>
 					<height>175</height>
-					<info>ListItem.Thumb</info>
+					<info>ListItem.Banner</info>
 					<aspectratio align="left" aligny="bottom">stretch</aspectratio>
 					<visible>Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)</visible>
 				</control>
@@ -94,7 +94,7 @@
 					<posy>175</posy>
 					<width>980</width>
 					<height>175</height>
-					<info>ListItem.Thumb</info>
+					<info>ListItem.Banner</info>
 					<texture flipy="true" diffuse="reflection.png"/>
 					<aspectratio align="left" aligny="top">stretch</aspectratio>
 					<visible>Container.Content(TVShows) + !Skin.HasSetting(UseTVShowsPosterCover)</visible>
@@ -504,7 +504,7 @@
 						<item id="3">
 							<description>First Aired</description>
 							<label>$LOCALIZE[20416]</label>
-							<label2>$INFO[ListItem.Premiered]</label2>
+							<label2>$INFO[ListItem.Date]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item id="4">
@@ -655,7 +655,7 @@
 						<item id="2">
 							<description>First Aired</description>
 							<label>$LOCALIZE[20416]</label>
-							<label2>$INFO[ListItem.Premiered]</label2>
+							<label2>$INFO[ListItem.Date]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item id="3">
@@ -780,7 +780,7 @@
 						<item id="2">
 							<description>First Aired</description>
 							<label>$LOCALIZE[20416]</label>
-							<label2>$INFO[ListItem.Premiered]</label2>
+							<label2>$INFO[ListItem.Date]</label2>
 							<onclick>-</onclick>
 						</item>
 						<item id="3">

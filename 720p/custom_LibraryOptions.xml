@@ -10,7 +10,6 @@
 			<width>229</width>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
-			<visible>Substring(Container.FolderPath,videodb://1/,Left) | Substring(Container.FolderPath,videodb://4/,Left)</visible>
 			<include>MenuOpenCloseAnim</include>
 			<control type="image">
 				<include>MenuBarItemBigTopBorder</include>
@@ -90,7 +89,6 @@
 			<width>229</width>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
-			<visible>Substring(Container.FolderPath,videodb://2/,Left) | Substring(Container.FolderPath,videodb://5/,Left)</visible>
 			<include>MenuOpenCloseAnim</include>
 			<control type="image">
 				<include>MenuBarItemBigTopBorder</include>
@@ -156,7 +154,6 @@
 			<width>229</width>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
-			<visible>Substring(Container.FolderPath,videodb://3/,Left) | Substring(Container.FolderPath,videodb://6/,Left)</visible>
 			<include>MenuOpenCloseAnim</include>
 			<control type="image">
 				<include>MenuBarItemBigTopBorder</include>
@@ -243,7 +240,6 @@
 			<width>229</width>
 			<itemgap>0</itemgap>
 			<orientation>vertical</orientation>
-			<visible>Substring(Container.FolderPath,musicdb,Left)</visible>
 			<include>MenuOpenCloseAnim</include>
 			<control type="image">
 				<include>MenuBarItemBigTopBorder</include>

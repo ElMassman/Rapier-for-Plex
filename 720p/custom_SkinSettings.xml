@@ -219,7 +219,7 @@
 				<Description>Backgrounds</Description>
 				<posy>111</posy>
 				<include>SettingsCatBtn</include>
-				<label>$LOCALIZE[33069]</label>
+				<label>Backgrounds</label>
 				<onfocus>Skin.SetString(SkinSettingsCategory,4)</onfocus>
 				<onup>3</onup>
 				<ondown>5</ondown>
