@@ -175,100 +175,12 @@
 		<control type="group">		
 			<posx>270</posx>		
 			<include>BreadCrumbOpenCloseAnim2</include>
-			<visible>!Window.IsActive(MovieInformation)</visible>
-			
+			<visible>!Window.IsActive(MovieInformation)</visible>		
 			<control type="button">
-				<description>Library</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
-				<visible>IsEmpty(Container.FolderPath)</visible>
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-	
-			<control type="button">
-				<description>Genres</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[135][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Title</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[369][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Year</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[345][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Actors</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[344][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Artists</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[133][/UPPERCASE]</label>
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Albums</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[132][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Directors</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[20348][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Studios</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[20388][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Video Playlists</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[136][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Video Plugins</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[31302][/UPPERCASE]</label>
-				
-				<include>BreadCrumbVisibleAnim2</include>
-			</control>
-			
-			<control type="button">
-				<description>Recently Added</description>
+				<description>Second Title</description>
 				<include>BreadCrumbBigBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[31303][/UPPERCASE]</label>
-				
+				<label>$INFO[Container.SecondTitle]</label>
+				<visible>!IsEmpty(Container.SecondTitle)</visible>
 				<include>BreadCrumbVisibleAnim2</include>
 			</control>
 		</control>
@@ -277,30 +189,12 @@
 			<posx>50</posx>		
 			<include>BreadCrumbAltOpenCloseAnim</include>
 			
+					
 			<control type="button">
-				<description>Videos</description>
+				<description>First Title</description>
 				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[3][/UPPERCASE]</label>
-			</control>
-			
-			<control type="button">
-				<description>Movies</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[20342][/UPPERCASE]</label>
-				
-			</control>
-			
-			<control type="button">
-				<description>TV Shows</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[20343][/UPPERCASE]</label>
-				
-			</control>
-			
-			<control type="button">
-				<description>Music Videos</description>
-				<include>BreadCrumbBtn</include>
-				<label>[UPPERCASE]$LOCALIZE[20389][/UPPERCASE]</label>
+				<label>$INFO[Container.FirstTitle]</label>
+				<visible>!IsEmpty(Container.FirstTitle)</visible>
 				
 			</control>
 		</control>

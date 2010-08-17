@@ -157,7 +157,7 @@
 					<font>MediaInfoFont</font>
 					<textcolor>MediaInfoItemColor</textcolor>
 					<shadowcolor>ShadowColor</shadowcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Premiered,$LOCALIZE[20416]: ,][/UPPERCASE]</label>
+					<label>[UPPERCASE]$INFO[ListItem.Date,$LOCALIZE[20416]: ,][/UPPERCASE]</label>
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -239,7 +239,7 @@
 					<font>MediaInfoFont</font>
 					<textcolor>MediaInfoItemColor</textcolor>
 					<shadowcolor>ShadowColor</shadowcolor>
-					<label>[UPPERCASE]$INFO[ListItem.Premiered,$LOCALIZE[20416]: ,][/UPPERCASE]</label>
+					<label>[UPPERCASE]$INFO[ListItem.Date,$LOCALIZE[20416]: ,][/UPPERCASE]</label>
 				</control>
 				<control type="label">
 					<description>Episodes</description>
@@ -430,7 +430,7 @@
 				<control type="label">
 					<description>First Aired Value</description>
 					<include>TVShowsListInfoViewCatValueLabel</include>
-					<label fallback="31000">$INFO[ListItem.Premiered]</label>
+					<label fallback="31000">$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
 					<description>Rating Value</description>
@@ -734,7 +734,7 @@
 				<control type="label">
 					<description>First Aired Value</description>
 					<include>TVShowsPosterListInfoViewCatValueLabel</include>
-					<label fallback="31000">$INFO[ListItem.Premiered]</label>
+					<label fallback="31000">$INFO[ListItem.Date]</label>
 				</control>
 				<control type="label">
 					<description>Rating Value</description>
@@ -4209,7 +4209,7 @@
 					<height>80</height>
 					<bordertexture border="7">item-shadow-border.png</bordertexture>
 					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Banner]</texture>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>								
 				<control type="label">
@@ -4265,7 +4265,7 @@
 					<height>80</height>
 					<bordertexture border="7">item-shadow-border.png</bordertexture>
 					<bordersize>5</bordersize>
-					<texture background="true">$INFO[ListItem.Banner]</texture>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
 					<aspectratio>keep</aspectratio>
 				</control>			
 				<control type="label">

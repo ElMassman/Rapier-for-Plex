@@ -282,7 +282,7 @@
 				<onclick>Skin.ToggleSetting(ShowMediaExtraOptions)</onclick>
 				<pulseonselect>false</pulseonselect>
 				<onup>600</onup>
-				<ondown>500</ondown>
+				<ondown>50</ondown>
 				<onleft>-</onleft>
 				<onright>184</onright>
 			</control>
@@ -298,7 +298,7 @@
 				<onclick>SetFocus(188)</onclick>
 				<pulseonselect>false</pulseonselect>
 				<onup>600</onup>
-				<ondown>500</ondown>
+				<ondown>50</ondown>
 				<onleft>185</onleft>
 				<onright>564</onright>
 			</control>
@@ -327,7 +327,7 @@
 			<height>34</height>
 			<itemgap>0</itemgap>
 			<onup>600</onup>
-			<ondown>500</ondown>
+			<ondown>50</ondown>
 			<onleft>184</onleft>
 			<onright>-</onright>
 			<orientation>horizontal</orientation>
@@ -457,7 +457,7 @@
 			<height>34</height>
 			<itemgap>0</itemgap>
 			<onup>600</onup>
-			<ondown>500</ondown>
+			<ondown>50</ondown>
 			<onleft>184</onleft>
 			<onright>-</onright>
 			<orientation>horizontal</orientation>

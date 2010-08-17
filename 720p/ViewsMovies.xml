@@ -802,7 +802,7 @@
 						<height>68</height>
 						<aspectratio>keep</aspectratio>
 						<fadetime>MediaFlagsCrossfadeTime</fadetime>
-						<texture>..//images/studios/$INFO[ListItem.Studio].png</texture>
+						<texture>$INFO[ListItem.Property(mediaTag::Studio)]</texture>
 						<visible>!Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(HideStudioFlags)</visible>
 					</control>	
 				</control>
@@ -973,7 +973,7 @@
 			<posy>338</posy>
 			<width>640</width>
 			<height>60</height>
-			<itemgap>0</itemgap>
+			<itemgap>8</itemgap>
 			<align>left</align>
 			<orientation>horizontal</orientation>
 			<visible>!Container.OnNext + !Container.OnPrevious + !Skin.HasSetting(HideMediaFlags)</visible>

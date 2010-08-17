@@ -245,7 +245,7 @@
 					<posy>555</posy>
 					<width>580</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
+					<itemgap>8</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<include>VideoMediaFlags</include>
@@ -385,7 +385,7 @@
 					<posy>555</posy>
 					<width>580</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
+					<itemgap>8</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<include>VideoMediaFlags</include>
@@ -542,7 +542,7 @@
 					<posy>555</posy>
 					<width>580</width>
 					<height>60</height>
-					<itemgap>0</itemgap>
+					<itemgap>8</itemgap>
 					<align>left</align>
 					<orientation>horizontal</orientation>
 					<include>VideoMediaFlags</include>

@@ -104,7 +104,7 @@
 						<font>MediaInfoHeadFont2</font>
 						<textcolor>MediaInfoHeadColor2</textcolor>
 						<shadowcolor>ShadowColor</shadowcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Premiered][/UPPERCASE]</label>
+						<label>[UPPERCASE]$INFO[ListItem.Date][/UPPERCASE]</label>
 					</control>
 					<control type="label">
 						<description>Rating</description>
@@ -175,7 +175,7 @@
 						<font>MediaInfoHeadFont2</font>
 						<textcolor>MediaInfoHeadColor2</textcolor>
 						<shadowcolor>ShadowColor</shadowcolor>
-						<label>[UPPERCASE]$INFO[ListItem.Premiered][/UPPERCASE]</label>
+						<label>[UPPERCASE]$INFO[ListItem.Date][/UPPERCASE]</label>
 					</control>
 					<control type="label">
 						<description>Rating</description>
@@ -334,9 +334,9 @@
 						<posy>335</posy>
 						<width>270</width>
 						<include>ListInfoView2CatLabel</include>			
-						<label>[UPPERCASE][COLOR=MediaInfoItemColor]$LOCALIZE[20416]:[/COLOR][/UPPERCASE] $INFO[ListItem.Premiered]</label>
+						<label>[UPPERCASE][COLOR=MediaInfoItemColor]$LOCALIZE[20416]:[/COLOR][/UPPERCASE] $INFO[ListItem.Date]</label>
 						<align>right</align>
-						<visible>!IsEmpty(ListItem.Premiered)</visible>
+						<visible>!IsEmpty(ListItem.Date)</visible>
 					</control>
 					
 					<control type="group">
@@ -470,9 +470,9 @@
 						<posy>335</posy>
 						<width>270</width>
 						<include>ListInfoView2CatLabel</include>			
-						<label>[UPPERCASE][COLOR=MediaInfoItemColor]$LOCALIZE[20416]:[/COLOR][/UPPERCASE] $INFO[ListItem.Premiered]</label>
+						<label>[UPPERCASE][COLOR=MediaInfoItemColor]$LOCALIZE[20416]:[/COLOR][/UPPERCASE] $INFO[ListItem.Date]</label>
 						<align>right</align>
-						<visible>!IsEmpty(ListItem.Premiered)</visible>
+						<visible>!IsEmpty(ListItem.Date)</visible>
 					</control>
 					
 					<control type="group">
