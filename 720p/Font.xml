@@ -1,6 +1,12 @@
 <fonts>
 	<fontset id="Default" unicode="true">
 		<!-- Common -->
+
+		<font>
+			<name>Home</name>
+			<filename>RapierBolCaps2.ttf</filename>
+			<size>40</size>
+		</font>
 	 	<font>
 			<name>font13</name>
 			<filename>RapierReg.ttf</filename>

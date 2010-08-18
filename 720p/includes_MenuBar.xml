@@ -339,7 +339,7 @@
 				<include>MenuBarArrowBigBtn</include>
 				<label>[UPPERCASE]$INFO[Control.GetLabel(2)][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3002)</onclick>
-				<onclick>SetFocus(500)</onclick>
+				<onclick>SetFocus(50)</onclick>
 			</control>	
 			<control type="image" id="351">
 				<include>MenuBarSeparator</include>
@@ -350,7 +350,7 @@
 				<label>[UPPERCASE]$INFO[Control.GetLabel(3)][/UPPERCASE]</label>
 				<enable>!Container.SortDirection(None)</enable>
 				<onclick>ActivateWindow(3003)</onclick>
-				<onclick>SetFocus(500)</onclick>
+				<onclick>SetFocus(50)</onclick>
 			</control>
 			<control type="image" id="352">
 				<include>MenuBarSeparator</include>
@@ -360,7 +360,7 @@
 				<include>MenuBarArrowBigBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3004)</onclick>
-				<onclick>SetFocus(500)</onclick>
+				<onclick>SetFocus(50)</onclick>
 				<enable>Substring(Container.FolderPath,videodb,Left)</enable>
 				<visible>Window.IsVisible(VideoLibrary)</visible>
 			</control>
@@ -373,7 +373,7 @@
 				<include>MenuBarArrowBigBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[14022][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3004)</onclick>
-				<onclick>SetFocus(500)</onclick>
+				<onclick>SetFocus(50)</onclick>
 				<enable>Substring(Container.FolderPath,musicdb,Left)</enable>
 				<visible>Window.IsVisible(MusicLibrary)</visible>
 			</control>
@@ -386,7 +386,7 @@
 				<include>MenuBarArrowBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[137][/UPPERCASE]</label>
 				<onclick>ActivateWindow(3005)</onclick>
-				<onclick>SetFocus(500)</onclick>
+				<onclick>SetFocus(50)</onclick>
 				<visible>Window.IsVisible(VideoLibrary) | Window.IsVisible(MusicLibrary)</visible>
 			</control>
             <control type="image" id="354">

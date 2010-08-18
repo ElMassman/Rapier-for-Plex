@@ -178,9 +178,9 @@
 
 	<include name="HomeMenuCategoryFocusAnim"> 
 		<animation effect="zoom" start="80" end="100" center="auto" time="150" delay="100">Visible</animation>
-		<animation effect="zoom" start="100" end="90" center="auto" time="150" delay="100" condition="!Control.HasFocus(850)">Conditional</animation>
+		<animation effect="zoom" start="100" end="90" center="auto" time="150" delay="100" condition="!Control.HasFocus(300)">Conditional</animation>
 		<animation effect="zoom" start="100" end="120" center="auto" condition="true">Conditional</animation>
-		<animation effect="fade" start="100" end="30" time="650" condition="!Control.HasFocus(850)">Conditional</animation>
+		<animation effect="fade" start="100" end="30" time="650" condition="!Control.HasFocus(300)">Conditional</animation>
 	</include>
 	
 	<include name="HomeMenuCategoryFocusAnim2"> 
@@ -426,7 +426,7 @@
 		<animation effect="slide" start="0,-38" time="250">Visible</animation>
 		<animation effect="slide" end="0,-38" time="250">Hidden</animation>
 		<animation effect="slide" end="0,-38" condition="Skin.HasSetting(HideMenuBar)">Conditional</animation>
-		<animation effect="slide" end="0,38" time="250" condition="Skin.HasSetting(HideMenuBar) + ControlGroup(850).HasFocus">Conditional</animation>
+		<animation effect="slide" end="0,38" time="250" condition="Skin.HasSetting(HideMenuBar) + ControlGroup(300).HasFocus">Conditional</animation>
 	</include>
 	
 	<include name="MenuBarOpenCloseAnim2">

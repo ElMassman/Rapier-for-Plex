@@ -136,7 +136,7 @@
 			<include>HomeMenuOpenCloseAnim</include>	
 			<include>HomeMenuFocusAnim</include>
 			<itemlayout width="340">
-				<control type="image">
+				<!--control type="image">
 					<posx>20</posx>
 					<posy>0</posy>
 					<width>300</width>
@@ -144,18 +144,42 @@
 					<texture background="true">$INFO[ListItem.ActualIcon]</texture>
 					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
+				</control-->
+				<control type="label">
+					<posx>175</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>40</height>
+					<align>center</align>
+					<info>ListItem.Label</info>
+					<textcolor>ffffffff</textcolor>
+					<font>Home</font>
+					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
 				</control>
 			</itemlayout>	
 			<focusedlayout width="340">
 				<control type="label">
-					<posx>175</posx>
-					<posy>30</posy>
+					<posx>220</posx>
 					<width>510</width>
-					<height>50</height>
+					<posy>63</posy>
+					<height>17</height>
+					<align>center</align>
+					<info>ListItem.Label2</info>
+					<textcolor>DefaultColor3</textcolor>
+					<font>RSSFont</font>
+					<include>HomeMenuCategoryFocusAnim</include>
+				</control>
+				<control type="label">
+					<posx>220</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>40</height>
 					<align>center</align>
 					<info>ListItem.Label</info>
 					<textcolor>ffffffff</textcolor>
-					<font>font13</font>
+					<font>Home</font>
+					<include>HomeMenuCategoryFocusAnim</include>
 				</control>
 			</focusedlayout>	
 			<content>
@@ -165,6 +189,8 @@
 					<thumb>$INFO[Skin.String(MusicCustomBG)]</thumb>
 					<onclick>ActivateWindow(Music)</onclick>
 					<visible>!Skin.HasSetting(HideMusicCategory)</visible>
+				<label>Music</label>
+				<label2>Plug-ins</label2>
 				</item>
 				<item id="2">
 					<description>Videos Category</description>
@@ -172,20 +198,8 @@
 					<thumb>$INFO[Skin.String(VideosCustomBG)]</thumb>
 					<onclick>ActivateWindow(VideoFiles)</onclick>	
 					<visible>!Skin.HasSetting(HideVideosCategory)</visible>
-				</item>
-				<item id="3">
-					<description>Movies Category</description>
-					<icon>..//images/homecategories/nofocus/english-movies-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(MoviesCustomBG)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,MovieTitles,Return)</onclick>  
-					<visible>!Skin.HasSetting(HideMoviesCategory) + Library.HasContent(Movies)</visible>
-				</item>
-				<item id="4">
-					<description>TV Shows Category</description>
-					<icon>..//images/homecategories/nofocus/english-tvshows-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(TVShowsCustomBG)]</thumb>
-					<onclick>ActivateWindow(VideoLibrary,TVShowTitles,Return)</onclick>
-					<visible>!Skin.HasSetting(HideTVShowsCategory) + Library.HasContent(TVShows)</visible>
+				<label>Video</label>
+				<label2>Plug-ins</label2>
 				</item>
 				<item id="5">
 					<description>Programs Category</description>
@@ -193,6 +207,7 @@
 					<thumb>$INFO[Skin.String(ProgramsCustomBG)]</thumb>
 					<onclick>ActivateWindow(Programs)</onclick>	
 					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
+				<label>Programs</label>
 				</item>
 				<item id="6">
 					<description>Pictures Category</description>
@@ -200,6 +215,8 @@
 					<thumb>$INFO[Skin.String(PicturesCustomBG)]</thumb>
 					<onclick>ActivateWindow(Pictures)</onclick>
 					<visible>!Skin.HasSetting(HidePicturesCategory)</visible>
+				<label>Pictures</label>
+				<label2>Plug-ins</label2>
 				</item>
 				<item id="7">
 					<description>General Category</description>
@@ -207,12 +224,14 @@
 					<thumb>$INFO[Skin.String(GeneralCustomBG)]</thumb>
 					<onclick>ActivateWindow(3006)</onclick>		
 					<visible>!Skin.HasSetting(HideGeneralCategory)</visible>
+				<label>General</label>
 				</item>	
 				<item id="8">
 					<description>System Category</description>
 					<icon>..//images/homecategories/nofocus/english-system-text-nofocus.png</icon>
 					<thumb>$INFO[Skin.String(SystemCustomBG)]</thumb>
 					<onclick>ActivateWindow(3007)</onclick>         			
+				<label>System</label>
 				</item>					
 			</content>					
 		</control>
@@ -235,7 +254,7 @@
 			<include>HomeMenuOpenCloseAnim</include>	
 			<include>HomeMenuFocusAnim</include>
 			<itemlayout width="340">
-				<control type="image">
+				<!--control type="image">
 					<posx>20</posx>
 					<posy>0</posy>
 					<width>300</width>
@@ -245,9 +264,43 @@
 					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
 					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007) | Window.IsActive(3011)
 					| Window.IsActive(3012) | Window.IsActive(3013) | Window.IsActive(3014) | Window.IsActive(3015) | Window.IsActive(3016)">Conditional</animation>
+				</control-->
+				<control type="label">
+					<posx>175</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>40</height>
+					<align>center</align>
+					<info>ListItem.Label</info>
+					<textcolor>ffffffff</textcolor>
+					<font>Home</font>
+					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
+					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
 				</control>
 			</itemlayout>	
 			<focusedlayout width="340">
+				<control type="label">
+					<posx>220</posx>
+					<width>510</width>
+					<posy>63</posy>
+					<height>17</height>
+					<align>center</align>
+					<info>ListItem.Label2</info>
+					<textcolor>DefaultColor3</textcolor>
+					<font>RSSFont</font>
+					<include>HomeMenuCategoryFocusAnim</include>
+				</control>
+				<control type="label">
+					<posx>220</posx>
+					<posy>10</posy>
+					<width>510</width>
+					<height>40</height>
+					<align>center</align>
+					<info>ListItem.Label</info>
+					<textcolor>ffffffff</textcolor>
+					<font>Home</font>
+					<include>HomeMenuCategoryFocusAnim</include>
+				</control>
 			</focusedlayout>	
 			<content>
 				<item id="1">
@@ -309,7 +362,7 @@
 		</control>
 	</include>
 	
-	<include name="HomeMenuCategoryFocusImages">
+	<!--include name="HomeMenuCategoryFocusImages">
 		<control type="group">
 			<posx>470</posx>
 			<posy>17</posy>
@@ -388,7 +441,7 @@
 				<include>HomeMenuCategoryFocusAnim</include>
 			</control>
 		</control>
-	</include>
+	</include-->
 	
 	<include name="HomeCategoryIcons">
 		<control type="group">		

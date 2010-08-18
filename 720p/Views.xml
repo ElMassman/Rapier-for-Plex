@@ -492,7 +492,7 @@
 				<description>Cover</description>
 				<width>425</width>
 				<height>100</height>
-				<texture background="true">$INFO[ListItem.Thumb]</texture>
+				<texture background="true">$INFO[ListItem.Banner]</texture>
 				<aspectratio>stretch</aspectratio>
 				<bordertexture border="7">item-shadow-border.png</bordertexture>
 				<bordersize>5</bordersize>
@@ -517,7 +517,7 @@
 				<width>425</width>
 				<height>100</height>
 				<bordersize>5</bordersize>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<texture background="true">$INFO[ListItem.Banner]</texture>
 				<aspectratio>keep</aspectratio>
 				<fadetime>IconCrossfadeTime</fadetime>
 				<visible>IsEmpty(ListItem.Thumb)</visible>		
