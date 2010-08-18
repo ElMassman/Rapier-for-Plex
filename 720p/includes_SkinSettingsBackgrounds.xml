@@ -30,7 +30,7 @@
 				<control type="radiobutton" id="4049">
 					<description>Default Background</description>
 					<include>SettingsContentSmallBtn</include>
-					<label>             $LOCALIZE[31034] ($LOCALIZE[31031])</label>
+					<label>             $LOCALIZE[31034] ($LOCALIZE[31030])</label>
 					<selected>Skin.String(DefaultBackground,) | Skin.String(DefaultBackground,1)</selected>
 					<onclick>Skin.SetString(DefaultBackground,1)</onclick>
 					<onclick>ReloadSkin()</onclick>
@@ -40,7 +40,7 @@
 				<control type="radiobutton" id="4050">
 					<description>Default Background 2</description>
 					<include>SettingsContentSmallBtn</include>
-					<label>             $LOCALIZE[31034] ($LOCALIZE[31030])</label>
+					<label>             $LOCALIZE[31034] ($LOCALIZE[31031])</label>
 					<selected>Skin.String(DefaultBackground,2)</selected>
 					<onclick>Skin.SetString(DefaultBackground,2)</onclick>
 					<onclick>ReloadSkin()</onclick>
@@ -50,7 +50,7 @@
 				<control type="radiobutton" id="4051">
 					<description>Default Background 3</description>
 					<include>SettingsContentSmallBtn</include>
-					<label>             $LOCALIZE[31035] ($LOCALIZE[31031])</label>
+					<label>             $LOCALIZE[31035] ($LOCALIZE[31030])</label>
 					<selected>Skin.String(DefaultBackground,3)</selected>
 					<onclick>Skin.SetString(DefaultBackground,3)</onclick>
 					<onclick>ReloadSkin()</onclick>
@@ -60,7 +60,7 @@
 				<control type="radiobutton" id="4052">
 					<description>Default Background 4</description>
 					<include>SettingsContentSmallBtn</include>
-					<label>             $LOCALIZE[31035] ($LOCALIZE[31030])</label>
+					<label>             $LOCALIZE[31035] ($LOCALIZE[31031])</label>
 					<selected>Skin.String(DefaultBackground,4)</selected>
 					<onclick>Skin.SetString(DefaultBackground,4)</onclick>
 					<onclick>ReloadSkin()</onclick>

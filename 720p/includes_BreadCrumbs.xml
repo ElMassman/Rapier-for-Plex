@@ -37,7 +37,7 @@
 			<height>43</height>
 			<texture border="0,0,22,0">..//images/skin/breadcrumb-background.png</texture>
 			<include condition="Skin.String(TopBarColor,2)">BreadCrumbBackgroundColor2</include>
-			<include condition="Skin.String(TopBarColor,3)">BreadCrumbBackgroundColor3</include>
+			<include condition="Skin.String(TopBarColor,1)">BreadCrumbBackgroundColor3</include>
 			<include condition="Skin.String(TopBarColor,4)">BreadCrumbBackgroundColor4</include>
 		</control>	
 		
@@ -55,9 +55,9 @@
 	    <width>240</width>
 		<height>43</height>
 		<font>BreadCrumbFont</font>
-		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,1)">BreadCrumbDefaultFontColor</include>
+		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,3)">BreadCrumbDefaultFontColor</include>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbFontColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbFontColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbFontColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbFontColor4</include>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -68,7 +68,7 @@
 		<texturenofocus border="0,0,22,0">..//images/skin/breadcrumb-background.png</texturenofocus>
 		<aspectratio>keep</aspectratio>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbBackgroundColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbBackgroundColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbBackgroundColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbBackgroundColor4</include>
 	</include>
 
@@ -76,9 +76,9 @@
 	    <width>170</width>
 		<height>43</height>
 		<font>BreadCrumbFont</font>
-		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,1)">BreadCrumbDefaultFontColor</include>
+		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,3)">BreadCrumbDefaultFontColor</include>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbFontColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbFontColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbFontColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbFontColor4</include>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -89,7 +89,7 @@
 		<texturenofocus border="0,0,22,0">..//images/skin/breadcrumb-background.png</texturenofocus>	
 		<aspectratio>keep</aspectratio>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbBackgroundColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbBackgroundColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbBackgroundColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbBackgroundColor4</include>
 	</include>
 	
@@ -97,9 +97,9 @@
 	    <width>270</width>
 		<height>43</height>
 		<font>BreadCrumbFont</font>
-		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,1)">BreadCrumbDefaultFontColor</include>
+		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,3)">BreadCrumbDefaultFontColor</include>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbFontColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbFontColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbFontColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbFontColor4</include>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -110,7 +110,7 @@
 		<texturenofocus border="0,0,22,0">..//images/skin/breadcrumb-background.png</texturenofocus>	
 		<aspectratio>keep</aspectratio>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbBackgroundColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbBackgroundColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbBackgroundColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbBackgroundColor4</include>
 	</include>
 	
@@ -118,9 +118,9 @@
 	    <width>310</width>
 		<height>43</height>
 		<font>BreadCrumbFont</font>
-		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,1)">BreadCrumbDefaultFontColor</include>
+		<include condition="Skin.String(TopBarColor,) | Skin.String(TopBarColor,3)">BreadCrumbDefaultFontColor</include>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbFontColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbFontColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbFontColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbFontColor4</include>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>0</textoffsety>
@@ -131,7 +131,7 @@
 		<texturenofocus border="0,0,22,0">..//images/skin/breadcrumb-background.png</texturenofocus>	
 		<aspectratio>keep</aspectratio>
 		<include condition="Skin.String(TopBarColor,2)">BreadCrumbBackgroundColor2</include>
-		<include condition="Skin.String(TopBarColor,3)">BreadCrumbBackgroundColor3</include>
+		<include condition="Skin.String(TopBarColor,1)">BreadCrumbBackgroundColor3</include>
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbBackgroundColor4</include>
 	</include>
 
