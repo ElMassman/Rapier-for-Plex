@@ -136,15 +136,6 @@
 			<include>HomeMenuOpenCloseAnim</include>	
 			<include>HomeMenuFocusAnim</include>
 			<itemlayout width="340">
-				<!--control type="image">
-					<posx>20</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>64</height>
-					<texture background="true">$INFO[ListItem.ActualIcon]</texture>
-					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
-				</control-->
 				<control type="label">
 					<posx>175</posx>
 					<posy>10</posy>
@@ -159,19 +150,20 @@
 				</control>
 			</itemlayout>	
 			<focusedlayout width="340">
+				<control type="group">
 				<control type="label">
-					<posx>220</posx>
+					<posx>175</posx>
 					<width>510</width>
-					<posy>63</posy>
+					<posy>50</posy>
 					<height>17</height>
 					<align>center</align>
 					<info>ListItem.Label2</info>
 					<textcolor>DefaultColor3</textcolor>
 					<font>RSSFont</font>
-					<include>HomeMenuCategoryFocusAnim</include>
 				</control>
 				<control type="label">
-					<posx>220</posx>
+					<animation effect="slide" start="0,0" end="0,-7" time="250" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
+					<posx>175</posx>
 					<posy>10</posy>
 					<width>510</width>
 					<height>40</height>
@@ -179,7 +171,7 @@
 					<info>ListItem.Label</info>
 					<textcolor>ffffffff</textcolor>
 					<font>Home</font>
-					<include>HomeMenuCategoryFocusAnim</include>
+				</control>
 				</control>
 			</focusedlayout>	
 			<content>
@@ -994,7 +986,7 @@
 			<height>28</height>
 			<texturefocus>arrow-scroll-left-focus2.png</texturefocus>
 			<texturenofocus>arrow-scroll-left-nofocus2.png</texturenofocus>
-			<onclick>Control.Message(850,movedown)</onclick>
+			<onclick>Control.Message(300,movedown)</onclick>
 		</control>
 		
 		<control type="button" id="102">
@@ -1005,7 +997,7 @@
 			<height>28</height>
 			<texturefocus flipx="true">arrow-scroll-left-focus2.png</texturefocus>
 			<texturenofocus flipx="true">arrow-scroll-left-nofocus2.png</texturenofocus>
-			<onclick>Control.Message(850,moveup)</onclick>
+			<onclick>Control.Message(300,moveup)</onclick>
 		</control>
 	</include>
 </includes>

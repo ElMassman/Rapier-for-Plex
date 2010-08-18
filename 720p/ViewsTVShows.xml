@@ -428,6 +428,19 @@
 					<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 					<aspectratio>stretch</aspectratio>
 					<fadetime>FanartCrossfadeTime</fadetime>	
+					<visible>!Skin.String(EpisodesListInfo2Style,1)</visible>
+				</control>
+
+				<control type="largeimage">
+					<description>Fanart</description>
+					<width>560</width>
+					<height>315</height>
+					<bordertexture border="7">item-shadow-border.png</bordertexture>
+					<bordersize>5</bordersize>
+					<texture background="true">$INFO[ListItem.Thumb]</texture>
+					<aspectratio>stretch</aspectratio>
+					<fadetime>FanartCrossfadeTime</fadetime>	
+					<visible>Skin.String(EpisodesListInfo2Style,1)</visible>
 				</control>
 				
 				<control type="group">

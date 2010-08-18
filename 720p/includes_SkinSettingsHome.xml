@@ -10,7 +10,7 @@
 			<orientation>vertical</orientation>	
 			<onup>901</onup>
 			<ondown>901</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<visible>Skin.String(SkinSettingsCategory,2)</visible>
 			<control type="togglebutton" id="2018">
 				<description>Toggle Home Menu Basic/Advanced</description>

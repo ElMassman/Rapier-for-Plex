@@ -815,6 +815,7 @@
 			</control>
 			<control type="image" id="120">
 				<include>MenuBarSeparator</include>
+				<visible>Container.Content(tvshows)</visible>
 			</control>
 			<control type="button" id="12">
 				<description>Get Fanart</description>
@@ -828,6 +829,10 @@
 				<description>Play Trailer</description>
 				<include>MenuBarSettingsBtn</include>
 				<label>[UPPERCASE]$LOCALIZE[20410][/UPPERCASE]</label>
+			</control>
+			<control type="image" id="121">
+				<include>MenuBarSeparator</include>
+				<visible>!Container.Content(tvshows)</visible>
 			</control>
 		</control>		
 	</include>

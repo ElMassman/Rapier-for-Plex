@@ -439,7 +439,7 @@
 				<pulseonselect>false</pulseonselect>
 				<visible>System.HasMediaDVD</visible>
 				<onup>-</onup>
-				<ondown>850</ondown>
+				<ondown>300</ondown>
 				<onleft>458</onleft>
 				<onright>346</onright>
 				<include>SystemTrayButtonFocusAnim</include>
@@ -458,7 +458,7 @@
 				<onclick>EjectTray()</onclick>
 				<pulseonselect>false</pulseonselect>
 				<onup>-</onup>
-				<ondown>850</ondown>
+				<ondown>300</ondown>
 				<onleft>344</onleft>
 				<onright>345</onright>
 				<include>SystemTrayButtonFocusAnim</include>
@@ -477,7 +477,7 @@
 				<onclick>ActivateWindow(ShutdownMenu)</onclick>
 				<pulseonselect>false</pulseonselect>
 				<onup>-</onup>
-				<ondown>850</ondown>
+				<ondown>300</ondown>
 				<onleft>346</onleft>
 				<onright>-</onright>
 				<include>SystemTrayButtonFocusAnim</include>
@@ -892,7 +892,7 @@
 				<texturefocus border="8">..//images/skin/top-bar-status-background.png</texturefocus>
 				<texturenofocus border="8">..//images/skin/top-bar-status-background.png</texturenofocus>
 				<onclick>ActivateWindow(MyWeather)</onclick>
-				<ondown>850</ondown>
+				<ondown>300</ondown>
 				<onright>344</onright>
 			</control>
 			
