@@ -344,7 +344,7 @@
 			<control type="image" id="351">
 				<include>MenuBarSeparator</include>
 			</control>
-			<control type="button" id="401">
+			<!--control type="button" id="401">
 				<description>Sort By</description>
 				<include>MenuBarArrowBigBtn</include>
 				<label>[UPPERCASE]$INFO[Control.GetLabel(3)][/UPPERCASE]</label>
@@ -354,7 +354,7 @@
 			</control>
 			<control type="image" id="352">
 				<include>MenuBarSeparator</include>
-			</control>
+			</control-->
 			<control type="button" id="402">
 				<description>Video Library</description>
 				<include>MenuBarArrowBigBtn</include>

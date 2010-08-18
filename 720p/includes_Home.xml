@@ -137,7 +137,7 @@
 			<include>HomeMenuFocusAnim</include>
 			<itemlayout width="340">
 				<control type="label">
-					<posx>175</posx>
+					<posx>173</posx>
 					<posy>10</posy>
 					<width>510</width>
 					<height>40</height>
@@ -152,7 +152,7 @@
 			<focusedlayout width="340">
 				<control type="group">
 				<control type="label">
-					<posx>175</posx>
+					<posx>173</posx>
 					<width>510</width>
 					<posy>50</posy>
 					<height>17</height>
@@ -163,7 +163,7 @@
 				</control>
 				<control type="label">
 					<animation effect="slide" start="0,0" end="0,-7" time="250" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
-					<posx>175</posx>
+					<posx>173</posx>
 					<posy>10</posy>
 					<width>510</width>
 					<height>40</height>
