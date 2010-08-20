@@ -1,5 +1,5 @@
 <window type="window" id="7">
-	<defaultcontrol always="true">850</defaultcontrol>
+	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
@@ -11,12 +11,12 @@
 			<include>BackgroundOpenCloseAnim</include>
 		</control>
 		
-		<control type="grouplist" id="850">
+		<control type="grouplist" id="300">
 			<description>Category Area</description>
 			<posx>95</posx>
 			<posy>142</posy>
-			<onup>850</onup>
-			<ondown>850</ondown>
+			<onup>300</onup>
+			<ondown>300</ondown>
 			<onleft>600</onleft>
 			<include>ControlsOpenCloseAnim</include>
 			<control type="button" id="95">
@@ -74,7 +74,7 @@
 			<orientation>vertical</orientation>	
 			<onup>900</onup>
 			<ondown>900</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<control type="button" id="2">
 				<include>SettingsContentBtn</include>
 			</control>

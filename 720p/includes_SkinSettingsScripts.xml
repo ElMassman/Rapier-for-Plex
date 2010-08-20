@@ -10,7 +10,7 @@
 			<orientation>vertical</orientation>	
 			<onup>903</onup>
 			<ondown>903</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<visible>Skin.String(SkinSettingsCategory,5)</visible>
 			<control type="radiobutton" id="5000">
 				<description>Show OpenSubtitles_OSD Button</description>

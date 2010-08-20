@@ -10,7 +10,7 @@
 			<orientation>vertical</orientation>	
 			<onup>903</onup>
 			<ondown>903</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<visible>Skin.String(SkinSettingsCategory,4)</visible>
 			<control type="radiobutton" id="4048">
 				<description>Default Background Settings</description>

@@ -17,7 +17,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>50</onup>
 				<ondown>50</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<itemlayout height="185" width="200">		
 					<control type="image">
@@ -141,7 +141,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>51</onup>
 				<ondown>51</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<itemlayout height="270" width="300">				
 					<control type="image">
@@ -276,7 +276,7 @@
 				<pagecontrol>150</pagecontrol>
 				<onup>52</onup>
 				<ondown>52</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>				
 				<itemlayout height="36">
 					<control type="image">
@@ -293,6 +293,18 @@
 						<height>23</height>
 						<texture background="true">$INFO[ListItem.ActualIcon].png</texture>
 						<aspectratio>keep</aspectratio>
+						<visible>![Container.Content(movies) | Container.Content(episodes)]</visible>
+					</control>
+	
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>5</posx>
+						<posy>6</posy>
+						<width>23</width>
+						<height>23</height>
+						<texture background="true">defaultvideo.png.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 					</control>					
 					<control type="label">
 						<posx>35</posx>
@@ -348,6 +360,18 @@
 						<height>23</height>
 						<texture background="true">$INFO[ListItem.ActualIcon].png</texture>
 						<aspectratio>keep</aspectratio>
+						<visible>![Container.Content(movies) | Container.Content(episodes)]</visible>
+					</control>
+	
+					<control type="image">
+						<description>Default Cover</description>
+						<posx>5</posx>
+						<posy>6</posy>
+						<width>23</width>
+						<height>23</height>
+						<texture background="true">defaultvideo.png.png</texture>
+						<aspectratio>keep</aspectratio>
+						<visible>Container.Content(movies) | Container.Content(episodes)</visible>
 					</control>
 					<control type="label">
 						<posx>35</posx>
@@ -467,7 +491,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>54</onup>
 				<ondown>54</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="270" width="200">	
@@ -629,7 +653,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>63</onup>
 				<ondown>63</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<visible>Window.IsActive(MusicFiles) | Container.Content(Songs) | Container.Content(Albums)</visible>
 				<itemlayout height="270" width="240">	

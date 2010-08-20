@@ -5,7 +5,7 @@
 	<controls>	
 		<include>FullControlAreaBackground</include>
 		
-		<control type="group" id="850">		
+		<control type="group" id="300">		
 			<description>Menu Bar Area</description>		
 			<posy>MenuBarOffsetY</posy>	
 			<include>MenuBarImage</include>

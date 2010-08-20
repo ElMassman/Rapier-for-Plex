@@ -266,8 +266,8 @@
 	</include>
 
 	<include name="DefaultMenuBar">
-		<control type="group" id="850">
-			<control type="togglebutton" id="185">
+		<control type="group" id="300">
+			<!--control type="togglebutton" id="185">
 				<description>Menu Bar Options</description>
 				<posx>10</posx>
 				<posy>3</posy>
@@ -285,11 +285,11 @@
 				<ondown>50</ondown>
 				<onleft>-</onleft>
 				<onright>184</onright>
-			</control>
+			</control-->
 			
 			<control type="button" id="184">
 				<description>View Mode Options</description>
-				<posx>40</posx>
+				<posx>10</posx><!--40-->
 				<posy>3</posy>
 				<width>30</width>
 				<height>30</height>
@@ -321,7 +321,7 @@
 	
 	<include name="MenuBarOptions">
 		<control type="grouplist" id="212">
-			<posx>80</posx>
+			<posx>50</posx>
 			<posy>0</posy>
 			<width>ScreenWidth</width>
 			<height>34</height>
@@ -636,7 +636,7 @@
 	</include>
 	
 	<include name="SettingsMenuBar">
-		<control type="grouplist" id="850">
+		<control type="grouplist" id="300">
 			<description>Settings Menu Bar</description>
 			<posx>4</posx>
 			<width>1272</width>
@@ -709,7 +709,7 @@
 	</include>
 	
 	<include name="MyWeatherMenuBar">
-		<control type="grouplist" id="850">
+		<control type="grouplist" id="300">
 			<description>Weather Menu Bar</description>
 			<width>ScreenWidth</width>
 			<height>34</height>
@@ -745,7 +745,7 @@
 	</include>
 	
 	<include name="ProfileSettingsMenuBar">
-		<control type="grouplist" id="850">
+		<control type="grouplist" id="300">
 			<description>Profiles Menu Bar</description>
 			<width>ScreenWidth</width>
 			<height>34</height>

@@ -122,9 +122,9 @@
 	<include name="HomeMenuBasic">
 		<control type="wraplist" id="300">
 			<description>Home Menu</description>
-			<posx>130</posx>
+			<posx>70</posx>
 			<posy>15</posy>
-			<width>1020</width>
+			<width>1210</width>
 			<height>96</height>
 			<focusposition>1</focusposition>
 			<scrolltime>250</scrolltime>
@@ -135,7 +135,7 @@
 			<onup>600</onup>
 			<include>HomeMenuOpenCloseAnim</include>	
 			<include>HomeMenuFocusAnim</include>
-			<itemlayout width="340">
+			<itemlayout width="400">
 				<control type="label">
 					<posx>173</posx>
 					<posy>10</posy>
@@ -149,12 +149,12 @@
 					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
 				</control>
 			</itemlayout>	
-			<focusedlayout width="340">
+			<focusedlayout width="400">
 				<control type="group">
 				<control type="label">
 					<posx>173</posx>
 					<width>510</width>
-					<posy>50</posy>
+					<posy>15</posy>
 					<height>17</height>
 					<align>center</align>
 					<info>ListItem.Label2</info>
@@ -162,7 +162,7 @@
 					<font>RSSFont</font>
 				</control>
 				<control type="label">
-					<animation effect="slide" start="0,0" end="0,-7" time="250" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
+					<animation effect="slide" start="0,0" end="0,7" time="250" condition="!IsEmpty(ListItem.Label2)">Conditional</animation>
 					<posx>173</posx>
 					<posy>10</posy>
 					<width>510</width>
@@ -175,15 +175,14 @@
 				</control>
 			</focusedlayout>	
 			<content>
-				<item id="1">
-					<description>Music Category</description>
-					<icon>..//images/homecategories/nofocus/english-music-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(MusicCustomBG)]</thumb>
-					<onclick>ActivateWindow(Music)</onclick>
-					<visible>!Skin.HasSetting(HideMusicCategory)</visible>
-				<label>Music</label>
-				<label2>Plug-ins</label2>
-				</item>
+				<item id="10">
+					<description>Plex Online</description>
+					<icon>..//images/homecategories/nofocus/english-system-text-nofocus.png</icon>
+					<thumb>$INFO[Skin.String(SystemCustomBG)]</thumb>
+					<onclick>Plex.ActivateWindow(1,plex://localhost/system/appstore,return)</onclick>         			
+				<label>Online</label>
+				<label2>Plex</label2>
+				</item>	
 				<item id="2">
 					<description>Videos Category</description>
 					<icon>..//images/homecategories/nofocus/english-videos-text-nofocus.png</icon>
@@ -193,13 +192,14 @@
 				<label>Video</label>
 				<label2>Plug-ins</label2>
 				</item>
-				<item id="5">
-					<description>Programs Category</description>
-					<icon>..//images/homecategories/nofocus/english-programs-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(ProgramsCustomBG)]</thumb>
-					<onclick>ActivateWindow(Programs)</onclick>	
-					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
-				<label>Programs</label>
+				<item id="1">
+					<description>Music Category</description>
+					<icon>..//images/homecategories/nofocus/english-music-text-nofocus.png</icon>
+					<thumb>$INFO[Skin.String(MusicCustomBG)]</thumb>
+					<onclick>ActivateWindow(Music)</onclick>
+					<visible>!Skin.HasSetting(HideMusicCategory)</visible>
+				<label>Music</label>
+				<label2>Plug-ins</label2>
 				</item>
 				<item id="6">
 					<description>Pictures Category</description>
@@ -210,20 +210,30 @@
 				<label>Pictures</label>
 				<label2>Plug-ins</label2>
 				</item>
-				<item id="7">
+				<item id="5">
+					<description>Programs Category</description>
+					<icon>..//images/homecategories/nofocus/english-programs-text-nofocus.png</icon>
+					<thumb>$INFO[Skin.String(ProgramsCustomBG)]</thumb>
+					<onclick>ActivateWindow(Programs)</onclick>	
+					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
+				<label>Applications</label>
+				<label2>Run Your</label2>
+				</item>
+				<!--item id="7">
 					<description>General Category</description>
 					<icon>..//images/homecategories/nofocus/english-general-text-nofocus.png</icon>
 					<thumb>$INFO[Skin.String(GeneralCustomBG)]</thumb>
 					<onclick>ActivateWindow(3006)</onclick>		
 					<visible>!Skin.HasSetting(HideGeneralCategory)</visible>
 				<label>General</label>
-				</item>	
+				</item-->
 				<item id="8">
 					<description>System Category</description>
 					<icon>..//images/homecategories/nofocus/english-system-text-nofocus.png</icon>
 					<thumb>$INFO[Skin.String(SystemCustomBG)]</thumb>
 					<onclick>ActivateWindow(3007)</onclick>         			
-				<label>System</label>
+				<label>Preferences</label>
+				<label2>Change Your</label2>
 				</item>					
 			</content>					
 		</control>
@@ -700,6 +710,15 @@
 				<texture>pms.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(300).HasFocus(1020)</visible>
+				<include>HomeMenuIconAnim</include>
+			</control>
+
+			<control type="image">
+				<description>Plex Online</description>
+				<include>HomeMenuIconDim</include>
+				<texture>pms.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Container(300).HasFocus(10)</visible>
 				<include>HomeMenuIconAnim</include>
 			</control>
 				

@@ -24,7 +24,7 @@
 				<orientation>vertical</orientation>
 				<onup>3</onup>
 				<ondown>3</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>5</onright>								
 			</control>	
 

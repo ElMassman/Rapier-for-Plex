@@ -17,7 +17,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>55</onup>
 				<ondown>55</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="137" width="600">
@@ -247,7 +247,7 @@
 				<pagecontrol>150</pagecontrol>
 				<onup>58</onup>
 				<ondown>58</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>	
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout height="36">
@@ -263,7 +263,7 @@
 						<posy>6</posy>
 						<width>23</width>
 						<height>23</height>
-						<texture background="true">$INFO[ListItem.ActualIcon].png</texture>
+						<texture background="true">defaultvideo.png.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>					
 					<control type="label">
@@ -318,7 +318,7 @@
 						<posy>6</posy>
 						<width>23</width>
 						<height>23</height>
-						<texture background="true">$INFO[ListItem.ActualIcon].png</texture>
+						<texture background="true">defaultvideo.png.png</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
@@ -1021,7 +1021,7 @@
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
 				<preloaditems>2</preloaditems>
-				<onup>850</onup>
+				<onup>300</onup>
 				<ondown>150</ondown>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout width="116">
@@ -1169,7 +1169,7 @@
 				<scrolltime>100</scrolltime>
 				<orientation>horizontal</orientation>
 				<preloaditems>2</preloaditems>
-				<onup>850</onup>
+				<onup>300</onup>
 				<ondown>150</ondown>
 				<visible>Container.Content(Movies)</visible>
 				<itemlayout width="160" height="214" condition="!Skin.HasSetting(HideMenuBar)">

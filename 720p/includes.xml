@@ -58,7 +58,7 @@
 	<include name="TopBarImage">
 		<control type="image">
 			<width>ScreenWidth</width>
-			<height>52</height>
+			<height>53</height>
 			<texture border="0,0,7,0">..//images/skin/top-bar-background.png</texture>
 			<include condition="Skin.String(TopBarColor,2)">TopBarBackgroundColor2</include>
 			<include condition="Skin.String(TopBarColor,1)">TopBarBackgroundColor3</include>
@@ -474,7 +474,7 @@
 				<texturefocus>top-bar-power-focus.png</texturefocus>
 				<texturenofocus>top-bar-power-nofocus.png</texturenofocus>
 				<aspectratio>keep</aspectratio>
-				<onclick>ActivateWindow(ShutdownMenu)</onclick>
+				<onclick>XBMC.SleepSystem()</onclick>
 				<pulseonselect>false</pulseonselect>
 				<onup>-</onup>
 				<ondown>300</ondown>

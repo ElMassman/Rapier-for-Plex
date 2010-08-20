@@ -10,7 +10,7 @@
 			<orientation>vertical</orientation>	
 			<onup>902</onup>
 			<ondown>902</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<visible>Skin.String(SkinSettingsCategory,3)</visible>
 			<control type="radiobutton" id="3000">
 				<description>Music Playing</description>

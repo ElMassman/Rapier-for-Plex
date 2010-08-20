@@ -1,5 +1,5 @@
 <window type="window" id="3001">
-	<defaultcontrol always="true">850</defaultcontrol>
+	<defaultcontrol always="true">300</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>	
@@ -151,7 +151,7 @@
 			<include>CustomImagePreviewFadeInAnim</include>
 		</control>
 		
-		<control type="group" id="850">
+		<control type="group" id="300">
 			<description>Category Area</description>
 			<posx>95</posx>
 			<posy>142</posy>
@@ -283,7 +283,7 @@
 				<orientation>vertical</orientation>	
 				<onup>903</onup>
 				<ondown>903</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<visible>Skin.String(SkinSettingsCategory,6)</visible>
 				<control type="button" id="6000">
 					<description>Confirm Reset Settings</description>

@@ -17,7 +17,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>60</onup>
 				<ondown>60</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Songs) | Container.Content(Albums)</visible>
 				<itemlayout height="137" width="600">				
@@ -277,7 +277,7 @@
 				<pagecontrol>150</pagecontrol>
 				<onup>62</onup>
 				<ondown>62</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>	
 				<visible>Container.Content(Albums) | Container.Content(Songs) | Container.Content(Artists)</visible>
 				<itemlayout height="36">
@@ -1017,7 +1017,7 @@
 				<scrolltime>100</scrolltime>
 				<orientation>horizontal</orientation>
 				<preloaditems>2</preloaditems>
-				<onup>850</onup>
+				<onup>300</onup>
 				<ondown>150</ondown>
 				<visible>Window.IsActive(MusicLibrary) + Container.Content(Albums)</visible>
 				<itemlayout width="214" height="214" condition="!Skin.HasSetting(HideMenuBar)">

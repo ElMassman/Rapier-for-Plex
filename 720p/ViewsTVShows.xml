@@ -53,7 +53,7 @@
 				<preloaditems>2</preloaditems>
 				<onup>57</onup>
 				<ondown>57</ondown>
-				<onleft>850</onleft>
+				<onleft>300</onleft>
 				<onright>150</onright>
 				<visible>Container.Content(Episodes)</visible>
 				<itemlayout height="137" width="600">				

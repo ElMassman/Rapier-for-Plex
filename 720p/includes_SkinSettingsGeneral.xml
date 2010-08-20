@@ -10,7 +10,7 @@
 			<orientation>vertical</orientation>	
 			<onup>900</onup>
 			<ondown>900</ondown>
-			<onleft>850</onleft>
+			<onleft>300</onleft>
 			<visible>Skin.String(SkinSettingsCategory,1)</visible>
 			<control type="radiobutton" id="1015">
 				<description>Change Top Bar Colour</description>
