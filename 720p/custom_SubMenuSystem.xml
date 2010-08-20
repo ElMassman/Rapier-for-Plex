@@ -56,18 +56,18 @@
 					</focusedlayout>
 					<content>
 						<item id="1">
-							<description>Settings</description>
-							<label>$LOCALIZE[5]</label>
-							<onclick>Dialog.Close(3007)</onclick>
-							<onclick>ActivateWindow(AppearanceSettings)</onclick>		
-						</item>
-						<item id="2">
 							<description>Skin Settings</description>
-							<label>$LOCALIZE[20077]</label>
+							<label>Skin Preferences</label>
 							<onclick>Dialog.Close(3007)</onclick>
 							<onclick>ActivateWindow(3001)</onclick>		
 						</item>
-						<item id="3">
+						<item id="2">
+							<description>Settings</description>
+							<label>Preferences</label>
+							<onclick>Dialog.Close(3007)</onclick>
+							<onclick>ActivateWindow(AppearanceSettings)</onclick>		
+						</item>
+						<!--item id="3">
 							<description>Profiles</description>
 							<label>$LOCALIZE[13200]</label>
 							<onclick>Dialog.Close(3007)</onclick>
@@ -78,7 +78,7 @@
 							<label>$LOCALIZE[130]</label>
 							<onclick>Dialog.Close(3007)</onclick>
 							<onclick>ActivateWindow(SystemInfo)</onclick>		
-						</item>
+						</item-->
 						<item id="5">
 							<description>Credits</description>
 							<label>$LOCALIZE[470]</label>

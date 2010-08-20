@@ -239,212 +239,6 @@
 		</control>
 	</include>
 	
-	<include name="HomeMenuAdvanced">
-		<control type="wraplist" id="300">
-			<description>Home Menu</description>
-			<posx>130</posx>
-			<posy>15</posy>
-			<width>1020</width>
-			<height>96</height>
-			<focusposition>1</focusposition>
-			<scrolltime>250</scrolltime>
-			<pagecontrol>-</pagecontrol>
-			<orientation>horizontal</orientation>
-			<itemgap>0</itemgap>
-			<preloaditems>2</preloaditems>
-			<onup>600</onup>
-			<include>HomeMenuOpenCloseAnim</include>	
-			<include>HomeMenuFocusAnim</include>
-			<itemlayout width="340">
-				<!--control type="image">
-					<posx>20</posx>
-					<posy>0</posy>
-					<width>300</width>
-					<height>64</height>
-					<texture background="true">$INFO[ListItem.ActualIcon]</texture>
-					<aspectratio>stretch</aspectratio>
-					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007) | Window.IsActive(3011)
-					| Window.IsActive(3012) | Window.IsActive(3013) | Window.IsActive(3014) | Window.IsActive(3015) | Window.IsActive(3016)">Conditional</animation>
-				</control-->
-				<control type="label">
-					<posx>175</posx>
-					<posy>10</posy>
-					<width>510</width>
-					<height>40</height>
-					<align>center</align>
-					<info>ListItem.Label</info>
-					<textcolor>ffffffff</textcolor>
-					<font>Home</font>
-					<animation effect="fade" start="100" end="30" time="650" condition="true">Conditional</animation>
-					<animation effect="fade" start="100" end="30" time="650" condition="Window.IsActive(3006) | Window.IsActive(3007)">Conditional</animation>
-				</control>
-			</itemlayout>	
-			<focusedlayout width="340">
-				<control type="label">
-					<posx>220</posx>
-					<width>510</width>
-					<posy>63</posy>
-					<height>17</height>
-					<align>center</align>
-					<info>ListItem.Label2</info>
-					<textcolor>DefaultColor3</textcolor>
-					<font>RSSFont</font>
-					<include>HomeMenuCategoryFocusAnim</include>
-				</control>
-				<control type="label">
-					<posx>220</posx>
-					<posy>10</posy>
-					<width>510</width>
-					<height>40</height>
-					<align>center</align>
-					<info>ListItem.Label</info>
-					<textcolor>ffffffff</textcolor>
-					<font>Home</font>
-					<include>HomeMenuCategoryFocusAnim</include>
-				</control>
-			</focusedlayout>	
-			<content>
-				<item id="1">
-					<description>Music Category</description>
-					<icon>..//images/homecategories/nofocus/english-music-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(MusicCustomBG)]</thumb>
-					<onclick>ActivateWindow(3013)</onclick>
-					<visible>!Skin.HasSetting(HideMusicCategory)</visible>
-				</item>
-				<item id="2">
-					<description>Videos Category</description>
-					<icon>..//images/homecategories/nofocus/english-videos-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(VideosCustomBG)]</thumb>
-					<onclick>ActivateWindow(3014)</onclick>	
-					<visible>!Skin.HasSetting(HideVideosCategory)</visible>
-				</item>
-				<item id="3">
-					<description>Movies Category</description>
-					<icon>..//images/homecategories/nofocus/english-movies-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(MoviesCustomBG)]</thumb>
-					<onclick>ActivateWindow(3015)</onclick>  
-					<visible>!Skin.HasSetting(HideMoviesCategory) + Library.HasContent(Movies)</visible>
-				</item>
-				<item id="4">
-					<description>TV Shows Category</description>
-					<icon>..//images/homecategories/nofocus/english-tvshows-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(TVShowsCustomBG)]</thumb>
-					<onclick>ActivateWindow(3016)</onclick>
-					<visible>!Skin.HasSetting(HideTVShowsCategory) + Library.HasContent(TVShows)</visible>
-				</item>
-				<item id="5">
-					<description>Programs Category</description>
-					<icon>..//images/homecategories/nofocus/english-programs-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(ProgramsCustomBG)]</thumb>
-					<onclick>ActivateWindow(3012)</onclick>	
-					<visible>!Skin.HasSetting(HideProgramsCategory)</visible>
-				</item>
-				<item id="6">
-					<description>Pictures Category</description>
-					<icon>..//images/homecategories/nofocus/english-pictures-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(PicturesCustomBG)]</thumb>
-					<onclick>ActivateWindow(3011)</onclick>
-					<visible>!Skin.HasSetting(HidePicturesCategory)</visible>
-				</item>
-				<item id="7">
-					<description>General Category</description>
-					<icon>..//images/homecategories/nofocus/english-general-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(GeneralCustomBG)]</thumb>
-					<onclick>ActivateWindow(3006)</onclick>		
-					<visible>!Skin.HasSetting(HideGeneralCategory)</visible>
-				</item>	
-				<item id="8">
-					<description>System Category</description>
-					<icon>..//images/homecategories/nofocus/english-system-text-nofocus.png</icon>
-					<thumb>$INFO[Skin.String(SystemCustomBG)]</thumb>
-					<onclick>ActivateWindow(3007)</onclick>         			
-				</item>					
-			</content>					
-		</control>
-	</include>
-	
-	<!--include name="HomeMenuCategoryFocusImages">
-		<control type="group">
-			<posx>470</posx>
-			<posy>17</posy>
-			<include condition="!Skin.HasSetting(UseAdvancedHomeMenu)">HomeMenuBasicVisibleCondition</include>
-			<include condition="Skin.HasSetting(UseAdvancedHomeMenu)">HomeMenuAdvancedVisibleCondition</include>
-
-			<control type="image">
-				<Description>Music Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-music-text-focus.png</texture>
-				<visible>Container(300).HasFocus(1)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>	
-	
-			<control type="image">
-				<Description>Videos Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-videos-text-focus.png</texture>
-				<visible>Container(300).HasFocus(2)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>	
-	
-			<control type="image">
-				<Description>Movies Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-movies-text-focus.png</texture>
-				<visible>Container(300).HasFocus(3)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>
-			
-			<control type="image">
-				<Description>TV Shows Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-tvshows-text-focus.png</texture>
-				<visible>Container(300).HasFocus(4)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>
-			
-			<control type="image">
-				<Description>Programs Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-programs-text-focus.png</texture>
-				<visible>Container(300).HasFocus(5)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>
-			
-			<control type="image">
-				<Description>Pictures Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-pictures-text-focus.png</texture>
-				<visible>Container(300).HasFocus(6)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>	
-		
-			<control type="image">
-				<Description>General Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-general-text-focus.png</texture>
-				<visible>Container(300).HasFocus(7)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>	
-			
-			<control type="image">
-				<Description>System Category Focus</Description>
-				<include>HomeMenuCategoryFocusPos</include>
-				<include>HomeMenuCategoryFocusDim</include>
-				<texture>..//images/homecategories/focus/english-system-text-focus.png</texture>
-				<visible>Container(300).HasFocus(8)</visible>
-				<include>HomeMenuCategoryFocusAnim</include>
-			</control>
-		</control>
-	</include-->
-	
 	<include name="HomeCategoryIcons">
 		<control type="group">		
 		 	<posx>512</posx>
@@ -990,6 +784,15 @@
 				<texture>pms.png</texture>
 				<aspectratio>keep</aspectratio>
 				<visible>Container(300).HasFocus(1020)</visible>
+				<include>HomeMenuIconAnim</include>
+			</control>
+
+			<control type="image">
+				<description>Plex Online</description>
+				<include>HomeMenuIconDim</include>
+				<texture>pms.png</texture>
+				<aspectratio>keep</aspectratio>
+				<visible>Container(300).HasFocus(10)</visible>
 				<include>HomeMenuIconAnim</include>
 			</control>
 				
