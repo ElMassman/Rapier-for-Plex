@@ -27,7 +27,7 @@
 	<color name="MediaInfoHeadColor">ffFF5D05</color>
 	<color name="MediaInfoItemColor">ffCC5819</color>
 	<color name="TopBarStatusColor">ff6F6F6F</color>
-	<color name="TopBarStatusColor2">ff03a5ff</color>
+	<color name="TopBarStatusColor2">ffFF5D05</color>
 	<color name="LoginScreenInfoSeparatorColor">ff6f6f6f</color>
 	<color name="ProgressColor">ffb8b8b8</color>
 	<color name="ProgressColor2">ffd03737</color>

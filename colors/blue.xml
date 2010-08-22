@@ -7,5 +7,5 @@
 	<color name="MenuItemColor2">ff198ECF</color>
 	<color name="InfoPaneColor2">ff11628F</color>
 	<color name="DialogHeadColor">ff03a5ff</color>
-	<color name="TopBarStatusColor2">ffFF5D05</color>
+	<color name="TopBarStatusColor2">ffFF5D05ff03a5ff</color>
 </colors>
