@@ -294,49 +294,49 @@
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[166], $LOCALIZE[14090], $LOCALIZE[14081], $LOCALIZE[360][/UPPERCASE]</label>
+			<label>Look and Feel, Region, RSS</label>
 			<visible>Window.IsActive(AppearanceSettings)</visible>
 		</control>
 
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14081], $LOCALIZE[108][/UPPERCASE]</label>
+			<label>General, $LOCALIZE[108][/UPPERCASE]</label>
 			<visible>Window.IsActive(PicturesSettings)</visible>
 		</control>	
 		
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14022], $LOCALIZE[14086], $LOCALIZE[14081], $LOCALIZE[15221], $LOCALIZE[620], $LOCALIZE[13327][/UPPERCASE]</label>
+			<label>General, Last.FM, Background</label>
 			<visible>Window.IsActive(MusicSettings)</visible>
 		</control>	
 		
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14022], $LOCALIZE[14086], $LOCALIZE[14081], $LOCALIZE[287], $LOCALIZE[14087], $LOCALIZE[21412][/UPPERCASE]</label>
+			<label>Player, Subtitles</label>
 			<visible>Window.IsActive(VideosSettings)</visible>
 		</control>	
 		
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[128][/UPPERCASE]</label>
+			<label>General</label>
 			<visible>Window.IsActive(WeatherSettings)</visible>
 		</control>	
 		
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[14036], $LOCALIZE[798][/UPPERCASE]</label>
+			<label>Update</label>
 			<visible>Window.IsActive(NetworkSettings)</visible>
 		</control>	
 		
 		<control type="label">
 			<posx>80</posx>
 			<include>InfoPaneHeadLabel2</include>
-			<label>[UPPERCASE]$LOCALIZE[21373], $LOCALIZE[337], $LOCALIZE[14094], $LOCALIZE[14095], $LOCALIZE[14092], $LOCALIZE[12360][/UPPERCASE]</label>
+			<label>Display, Audio, Input Devices, Media Server, Screen Saver, Energy Saver, Cache</label>
 			<visible>Window.IsActive(SystemSettings)</visible>
 		</control>	
 	</include>

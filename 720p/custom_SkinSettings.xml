@@ -167,7 +167,7 @@
 				<include>SettingsCatBtn</include>
 				<label>$LOCALIZE[128]</label>
 				<onfocus>Skin.SetString(SkinSettingsCategory,1)</onfocus>
-				<onup>6</onup>
+				<onup>4</onup>
 				<ondown>2</ondown>
 				<onleft>600</onleft>
 				<onright>851</onright>
@@ -222,7 +222,7 @@
 				<label>Backgrounds</label>
 				<onfocus>Skin.SetString(SkinSettingsCategory,4)</onfocus>
 				<onup>3</onup>
-				<ondown>5</ondown>
+				<ondown>1</ondown>
 				<onleft>600</onleft>
 				<onright>851</onright>
 			</control>
@@ -233,7 +233,7 @@
 				<visible>Control.IsVisible(904)</visible>
 			</control>
 			
-			<control type="button" id="5">
+			<!--control type="button" id="5">
 				<Description>Scripts</Description>
 				<posy>148</posy>
 				<include>SettingsCatBtn</include>
@@ -243,7 +243,7 @@
 				<ondown>6</ondown>
 				<onleft>600</onleft>
 				<onright>851</onright>
-			</control>
+			</control-->
 			
 			<control type="image">
 				<posy>185</posy>
@@ -251,7 +251,7 @@
 				<visible>Control.IsVisible(905)</visible>
 			</control>
 			
-			<control type="button" id="6">
+			<!--control type="button" id="6">
 				<Description>Reset Skin Settings</Description>
 				<posy>185</posy>
 				<include>SettingsCatBtn</include>
@@ -261,7 +261,7 @@
 				<ondown>1</ondown>
 				<onleft>600</onleft>
 				<onright>905</onright>
-			</control>	
+			</control-->	
 		</control>
 		
 		<control type="group" id="851">
@@ -273,7 +273,7 @@
 			<include>BackgroundsSkinSettings</include>
 			<include>ScriptsSkinSettings</include>
 
-			<control type="grouplist" id="905">		
+			<!--control type="grouplist" id="905">		
 				<description>Reset Settings</description>
 				<posx>385</posx>
 				<posy>140</posy>
@@ -291,7 +291,7 @@
 					<label>$LOCALIZE[31999]</label>
 					<onclick>Skin.ResetSettings</onclick>
 				</control>
-			</control>
+			</control-->
 		</control>
 		
 		<control type="group">
