@@ -94,7 +94,7 @@
 	</include>
 	
 	<include name="BreadCrumbBigBtn">
-	    <width>270</width>
+	    <width>550</width>
 		<height>43</height>
 		<font>BreadCrumbFont</font>
 		<include condition="Skin.String(TopBarColor,3)">BreadCrumbDefaultFontColor</include>
@@ -103,7 +103,7 @@
 		<include condition="Skin.String(TopBarColor,4)">BreadCrumbFontColor4</include>
 		<textoffsetx>30</textoffsetx>
 		<textoffsety>0</textoffsety>
-		<textwidth>220</textwidth>
+		<textwidth>500</textwidth>
 		<align>left</align>
 		<aligny>top</aligny>
 		<texturefocus border="0,0,22,0">..//images/skin/breadcrumb-background.png</texturefocus>
